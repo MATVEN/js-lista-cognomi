@@ -1,24 +1,23 @@
 // variabili
-var list ["Totti", "Vena", "Anderson", "Manna", "Bianchi"]
-var surnameUser;
+var list = ["Totti", "Vera", "Anderson", "Manna", "Bianchi"];
+console.log(list);
+var surnameUser = prompt('Inserisci il tuo Cognome!');
 var ranking;
-var position = list[i];
-
-// ask surname user
-surnameUser = prompt("Inssrisci il tuo Cognome!");
 
 // surnamen in the list
 list.push(surnameUser);
+console.log(list );
 
 // ordinary list
-surnameUser.sort();
+list.sort();
 
 // position allocated
-for (var i = 0; i < array.length; i++) {
+for (var i = 0; i < list.length; i++) {
+  var position = list[i];
   if (surnameUser == position) {
     ranking = i;
   }
 }
 
 // stamp
-document.getElementById('surnamelist').innerHTML = surnameUser + "Sei in posizione: " + ranking;
+document.getElementById('surnamelist').innerHTML = surnameUser + " sei in posizione: " + ranking;
